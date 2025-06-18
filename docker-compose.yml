@@ -1,0 +1,30 @@
+services:
+  arquetipo-node-api:
+    #image: ${DOCKER_REGISTRY}${DOCKER_DIR}-web:${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHA} # Defines si es web
+    image: ${DOCKER_REGISTRY}${DOCKER_DIR}-api:${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHA} # Defines si es api
+    build:
+      context: . # Contexto de construcción, el directorio actual
+      dockerfile: Dockerfile # Nombre del archivo Dockerfile
+    ports:
+      - "3000:3000" # Mapeo de puertos (nginx:serviciointerno)
+    labels:
+      kompose.service.expose: ${DESA_DNS_URL_APP} # Exponer el servicio con la URL especificada
+      kompose.image-pull-secret: ${DOCKER_ACR_SECRET} # Secreto para conectar Docker Container Registry
+      kompose.service.expose.tls-secret: ${DESA_TLS} # Secreto TLS para el servicio
+      kompose.service.type: clusterip # Tipo de servicio en Kubernetes (ClusterIP)
+      kubernetes.io/ingress.class: nginx # Clase de ingreso en Kubernetes
+    environment:
+      - TZ=America/Santiago # Zona horaria
+      - NODE_ENV=development
+      - PORT=3000
+      - DB_HOST=${DESA_DB_HOST}
+      - DB_PORT=${DESA_DB_PORT}
+      - DB_USER=${DESA_DB_USER}
+      - DB_PASS=${DESA_DB_PASS}
+      - DB_NAME=${DESA_DB_NAME}
+      - API_FERIADOS=${DESA_API_FERIADOS}
+      - HOST_DOMINIO=${DESA_HOST_URL}
+      - CRON_EXPRESSION=${DESA_CRON}
+    restart: always # Política de reinicio
+
+# Fin del archivo docker-compose.yml

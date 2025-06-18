@@ -1,0 +1,159 @@
+# =========================
+# 💡 Pool de agentes Azure
+# =========================
+pool:
+  vmImage: ubuntu-22.04
+
+# =========================
+# 🔧 Variables globales
+# =========================
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+  # Identificadores de CI
+  CI_COMMIT_REF_SLUG: $(Build.BuildId)
+  CI_COMMIT_SHA: $(Build.SourceVersion)
+
+  # Configuración Docker
+  DOCKER_REGISTRY: ''
+  DOCKER_DIR: 'arquetipo-node-api'
+  DOCKER_COMPOSE_SET: 'docker-compose.yml'
+  DOCKER_ACR_SECRET: '' 
+
+  # Conexiones AKS por entorno
+  DESA_KUBE_SERVICE_CONN: ''
+  DESA_NAMESPACE: 'default'  # 📌 Definir el namespace si no está ya configurado
+
+# =========================
+# 🚀 STAGE: Desarrollo (DEV)
+# =========================
+
+stages:
+  - stage: DEV
+    displayName: Despliegue a Desarrollo
+    jobs:
+      - job: ReleaseDEV
+        steps:
+        
+          # 👉 Notificar inicio pipeline
+          - template: team-notificacion.yaml
+            parameters:
+              title: DevOps - 🛠 Despliegue DEV
+              author: Proceso iniciado por $(Build.RequestedFor) - Compilación $(Build.BuildNumber)
+              nombre: Pipeline Azure $(Build.DefinitionName)
+              resultado: ''
+              message: |
+                ▶ Pipeline iniciado en entorno DEV
+              webhookUrl: $(URL_TEAM_NOTI)
+              condition: always()  # 📌 Siempre notificar el inicio
+
+          # 👉 Login en Docker Registry
+          - task: Docker@2
+            displayName: 'Login en Docker Registry'
+            inputs:
+              containerRegistry: $(DOCKER_ACR_SECRET)
+              command: login
+
+          # 👉 Generar manifiesto Kompose (compose ➝ k8s)
+          - task: CmdLine@2
+            displayName: Generar kompose.yaml
+            inputs:
+              script: |
+                curl -L "https://github.com/kubernetes/kompose/releases/download/v1.35.0/kompose-linux-amd64" -o ./kompose
+                chmod +x ./kompose
+                ./kompose convert -f $(Build.SourcesDirectory)/$(DOCKER_COMPOSE_SET) -o kompose.yaml
+              workingDirectory: $(Agent.TempDirectory)
+
+          # 👉 Copiar kompose.yaml a staging
+          - task: CopyFiles@2
+            displayName: Copiar kompose.yaml a staging
+            inputs:
+              SourceFolder: $(Agent.TempDirectory)
+              Contents: '**/*.yaml'
+              TargetFolder: $(Build.ArtifactStagingDirectory)
+
+          # 👉 Publicar artefactos
+          - task: PublishBuildArtifacts@1
+            displayName: Publicar artefactos (kompose.yaml)
+            inputs:
+              PathtoPublish: $(Build.ArtifactStagingDirectory)
+              ArtifactName: drop
+              publishLocation: Container
+
+          # 👉 Limpieza pre-compilación
+          - task: CmdLine@2
+            displayName: Validar espacio pre-job
+            inputs:
+              script: |
+                df -h
+                docker images
+                docker system prune -f  # 📌 Eliminar caché de Docker sin `--all`
+
+          # 👉 Build de contenedores
+          - task: DockerCompose@1
+            displayName: Build de contenedores
+            inputs:
+              containerregistrytype: Container Registry
+              dockerRegistryEndpoint: $(DOCKER_ACR_SECRET)
+              dockerComposeFile: $(Build.SourcesDirectory)/$(DOCKER_COMPOSE_SET)
+              projectName: 'arquetipo-project'
+              action: 'Build services'
+              additionalImageTags: $(Build.BuildId)
+              includeLatestTag: true
+
+          # 👉 Validar espacio post-compilación
+          - task: CmdLine@2
+            displayName: Validar espacio post-job
+            inputs:
+              script: |
+                df -h
+                docker images
+
+          # 👉 Push a Docker Registry
+          - task: DockerCompose@1
+            displayName: Push de contenedores
+            inputs:
+              containerregistrytype: Container Registry
+              dockerRegistryEndpoint: $(DOCKER_ACR_SECRET)
+              dockerComposeFile: $(Build.SourcesDirectory)/$(DOCKER_COMPOSE_SET)
+              projectName: 'arquetipo-project'
+              action: 'Push services'
+              additionalImageTags: $(Build.BuildId)
+              includeLatestTag: true
+
+          # 👉 Cierre de servicios Docker (Stop en lugar de Lock)
+          - task: DockerCompose@1
+            displayName: Detener servicios Docker
+            inputs:
+              containerregistrytype: Container Registry
+              dockerRegistryEndpoint: $(DOCKER_ACR_SECRET)
+              dockerComposeFile: $(Build.SourcesDirectory)/$(DOCKER_COMPOSE_SET)
+              projectName: 'arquetipo-project'
+              action: 'Down'  # 📌 Cambiado de "Lock services" a "Down"
+
+          # 👉 Despliegue en AKS usando kompose.yaml
+          - task: Kubernetes@1
+            displayName: Aplicar kompose en AKS DEV
+            inputs:
+              connectionType: Kubernetes Service Connection
+              kubernetesServiceEndpoint: $(DESA_KUBE_SERVICE_CONN)
+              namespace: $(DESA_NAMESPACE)
+              command: apply
+              arguments: -f $(Agent.TempDirectory)/kompose.yaml
+              secretType: dockerRegistry
+              containerRegistryType: Azure Container Registry
+
+          # 👉 Notificación de éxito o fallo
+          - template: team-notificacion.yaml
+            parameters:
+              title: DevOps - 🚀 Despliegue en DEV finalizado
+              author: $(Build.RequestedFor)
+              nombre: $(Build.DefinitionName)
+              resultado: |
+                [Resultados]($(System.TeamFoundationCollectionUri)$(System.TeamProject)/_build/results?buildId=$(Build.BuildId))
+              message: |
+                $(Build.Reason) - Resultado: $(Build.Status)
+              webhookUrl: $(URL_TEAM_NOTI)
+              condition: always()  # 📌 Notificación siempre, sin importar si falló o no

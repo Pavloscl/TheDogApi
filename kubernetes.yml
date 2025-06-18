@@ -1,0 +1,125 @@
+apiVersion: v1
+kind: List
+metadata: {}
+
+items:
+  - apiVersion: v1
+    kind: Service
+    metadata:
+      annotations:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: arquetipo-node-api # Etiqueta para identificar el servicio
+      name: arquetipo-node-api # Nombre del servicio
+    spec:
+      ports:
+        - name: "3000" # Nombre del puerto
+          port: 3000 # Puerto en el que el servicio estará disponible
+          targetPort: 3000 # Puerto en el contenedor al que se redirige el tráfico
+      selector:
+        io.kompose.service: arquetipo-node-api # Selector para dirigir el tráfico a los pods correspondientes
+    status:
+      loadBalancer: {}
+
+  - apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      annotations:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: arquetipo-node-api # Etiqueta para identificar el despliegue
+      name: arquetipo-node-api # Nombre del despliegue
+    spec:
+      replicas: 1 # Número de réplicas del pod
+      selector:
+        matchLabels:
+          io.kompose.service: arquetipo-node-api # Selector para asociar pods al despliegue
+      strategy:
+        type: Recreate # Estrategia de despliegue
+      template:
+        metadata:
+          annotations:
+          creationTimestamp: null
+          labels:
+            io.kompose.service: arquetipo-node-api # Etiqueta para identificar el pod
+        spec:
+          containers:
+            - env:
+                - name: TZ # Variable de entorno para la zona horaria
+                  value: America/Santiago  # Zona horaria   
+                - name: NODE_ENV
+                  value: __APP_ENV__
+                - name: PORT
+                  value: "3000"
+                - name: HOST_DOMINIO
+                  value: __HOST_DOMINIO__
+                - name: CRON_EXPRESSION
+                  value: __CRON_EXPRESSION__
+                - name: DB_HOST
+                  valueFrom:
+                    secretKeyRef:
+                      name: db-feriados-legales
+                      key: DB_HOST  
+                - name: DB_PORT
+                  valueFrom:
+                    secretKeyRef:
+                      name: db-feriados-legales
+                      key: DB_PORT  
+                - name: DB_USER
+                  valueFrom:
+                    secretKeyRef:
+                      name: db-feriados-legales
+                      key: DB-USER  
+                - name: DB_PASS
+                  valueFrom:
+                    secretKeyRef:
+                      name: db-feriados-legales
+                      key: DB_PASS  
+                - name: DB_NAME
+                  valueFrom:
+                    secretKeyRef:
+                      name: db-feriados-legales
+                      key: DB_NAME             
+                - name: API_FERIADOS
+                  value: __APIFERIADO__
+              image: minvu.azurecr.io/arquetipo-node-api:IMAGENID # Imagen del contenedor que se seterara desde el pipeline con la tarea Seteo de variables kubernetes-deployment.yml
+              name: arquetipo-node-api # Nombre del contenedor
+              ports:
+                - containerPort: 3000 # Puerto en el contenedor
+              resources: {} # Recursos asignados (CPU, memoria, etc.)
+          imagePullSecrets:
+            - name: __ACR__ # Secreto para la extracción de la imagen del registro
+          restartPolicy: Always # Política de reinicio del contenedor
+    status: {}
+
+  - apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+      annotations:
+        nginx.ingress.kubernetes.io/proxy-body-size: 8m # Tamaño máximo del cuerpo de la solicitud
+        nginx.ingress.kubernetes.io/proxy-buffer-size: "512k" # Tamaño del buffer del proxy
+        nginx.ingress.kubernetes.io/proxy-buffers-number: "16" # Número de buffers del proxy
+        nginx.ingress.kubernetes.io/proxy-busy-buffers-size: "512k" # Tamaño de los buffers ocupados del proxy
+      creationTimestamp: null
+      labels:
+        io.kompose.service: arquetipo-node-api # Etiqueta para identificar el ingreso
+      name: arquetipo-node-api # Nombre del ingreso
+    spec:
+      ingressClassName: nginx # Clase de ingreso
+      rules:
+        - host: __URL_EXPO__ # DNS de ingreso que se seteara desde el pipeline con la tarea Seteo de variables kubernetes-deployment.yml
+          http:
+            paths:
+              - backend:
+                  service:
+                    name: arquetipo-node-api # Nombre del servicio backend
+                    port:
+                      number: 3000 # Puerto del servicio backend
+                path: / # Ruta del ingreso
+                pathType: Prefix # Tipo de ruta
+      tls:
+        - hosts:
+            - __URL_EXPO__ # DNS para el TLS que se seteara desde el pipeline con la tarea Seteo de variables kubernetes-deployment.yml
+          secretName: __TLS0__ # Nombre del secreto TLS
+    status:
+      loadBalancer: {}
