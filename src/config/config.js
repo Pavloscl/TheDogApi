@@ -58,6 +58,7 @@ module.exports = {
 
   // Configuración de APIs externas
   apiFeriados: process.env.API_FERIADOS || 'https://feriados.cl/api/', // URL de la API de feriados
+  apiTheDog : process.env.API_DOG || 'https://thedogapi.com/api', // URL de la API de ApiDog
 
   // Configuración de JWT
   jwtSecret: process.env.JWT_SECRET || 'secret', // Clave secreta para firmar tokens JWT
