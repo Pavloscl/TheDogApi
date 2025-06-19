@@ -433,3 +433,14 @@
 [2025-06-10 16:07:09] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
 [2025-06-10 16:07:09] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
 [2025-06-10 16:07:09] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-18 22:46:43] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-18 22:46:43] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-18 22:46:43] [32minfo[39m: 🌐 Servidor corriendo en el entorno production en el puerto 3001
+[2025-06-18 22:46:43] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-18 22:47:48] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-18 22:47:48] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-18 22:47:48] [32minfo[39m: 🌐 Servidor corriendo en el entorno production en el puerto 3001
+[2025-06-18 22:47:48] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-18 22:51:32] [32minfo[39m: ⏳ Enviando solicitud a OpenAI para generar el plan alimenticio...
+[2025-06-18 22:51:32] [31merror[39m: ❌ Error llamando a OpenAI: 401 Incorrect API key provided: sk-proj-*************ssss. You can find your API key at https://platform.openai.com/account/api-keys.
+[2025-06-18 22:51:32] [31merror[39m: Error al calcular dieta: Error al calcular la dieta: Error al generar el plan alimenticio. Por favor, inténtelo de nuevo más tarde.

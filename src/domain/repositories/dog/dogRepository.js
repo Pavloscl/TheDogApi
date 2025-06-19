@@ -1,0 +1,1 @@
+const logger = require('../../../infrastructure/logger'); // Logger personalizado para registrar eventos
