@@ -58,7 +58,14 @@ module.exports = {
 
   // Configuración de APIs externas
   apiFeriados: process.env.API_FERIADOS || 'https://feriados.cl/api/', // URL de la API de feriados
-  apiTheDog : process.env.API_DOG || 'https://thedogapi.com/api', // URL de la API de ApiDog
+  
+  // Endpoint Base The Dog Api
+  apiDogBase: process.env.API_DOG_BASE || 'https://api.thedogapi.com/v1',
+  // Endpoint completo para razas
+  apiTheDog: process.env.API_DOG || 'https://api.thedogapi.com/v1/breeds',
+  // Endpoint de imágenes 
+  apiTheDogImagenes: process.env.API_DOG_IMAGEN || 'https://api.thedogapi.com/v1/images/search?breed_id={id}',
+
 
   // Configuración de JWT
   jwtSecret: process.env.JWT_SECRET || 'secret', // Clave secreta para firmar tokens JWT

@@ -3,3 +3,5 @@
 [2025-05-29 16:00:10] [31merror[39m: Error al autenticar el token: jwt expired
 [2025-06-18 22:51:32] [31merror[39m: ❌ Error llamando a OpenAI: 401 Incorrect API key provided: sk-proj-*************ssss. You can find your API key at https://platform.openai.com/account/api-keys.
 [2025-06-18 22:51:32] [31merror[39m: Error al calcular dieta: Error al calcular la dieta: Error al generar el plan alimenticio. Por favor, inténtelo de nuevo más tarde.
+[2025-06-20 14:54:24] [31merror[39m: Error al obtener los feriados legales: ConnectionError: Failed to connect to localhost:1433 - Could not connect (sequence)
+[2025-06-20 14:54:24] [31merror[39m: Error al obtener feriados legales: Error al obtener feriados legales: Failed to connect to localhost:1433 - Could not connect (sequence)

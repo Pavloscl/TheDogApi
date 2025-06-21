@@ -17,6 +17,7 @@ const encryptionRoutes = require('./routes/encryp/encryptionRoutes'); // Rutas d
 const feriadosRoutes = require('./routes/feriado/feriadosRoutes'); // Rutas de la API
 const nutricionRoutes = require('./routes/openai/nutricionRoutes'); // Rutas de la API
 const multerRoutes = require('./routes/multer/multerRoutes'); // Rutas de la API
+const dogRoutes = require('./routes/dog/dogRoutes'); // Rutas de la API
 
 // Importar rutas del taller
 const holaRoutes = require('./routes/hola/hola'); // Rutas del taller
@@ -80,6 +81,7 @@ app.use('/api', encryptionRoutes);
 app.use('/api', feriadosRoutes);
 app.use('/api', nutricionRoutes); 
 app.use('/api', multerRoutes); 
+app.use('/api', dogRoutes); 
 
 // Taller
 app.use('/api', holaRoutes); 
