@@ -37,7 +37,7 @@ router.post('/SubirArchivo', upload.single('file'), azureBlobController.subirArc
  */
 
 /**
- * @route GET /DescargarArchivo
+ * @route GET /DescargarArchivos
  * @group AzureBlob - Operaciones relacionadas con Azure Blob Storage
  * @returns {Array} 200 - Lista de todos los feriados obtenidos desde la API externa
  * @returns {Error}  401 - No autorizado

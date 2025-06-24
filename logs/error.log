@@ -5,3 +5,5 @@
 [2025-06-18 22:51:32] [31merror[39m: Error al calcular dieta: Error al calcular la dieta: Error al generar el plan alimenticio. Por favor, inténtelo de nuevo más tarde.
 [2025-06-20 14:54:24] [31merror[39m: Error al obtener los feriados legales: ConnectionError: Failed to connect to localhost:1433 - Could not connect (sequence)
 [2025-06-20 14:54:24] [31merror[39m: Error al obtener feriados legales: Error al obtener feriados legales: Failed to connect to localhost:1433 - Could not connect (sequence)
+[2025-06-22 03:15:46] [31merror[39m: Error al descargar archivo: getaddrinfo ENOTFOUND account_name.blob.core.windows.net
+[2025-06-22 03:15:46] [31merror[39m: Error al descargarArchivo: No se pudo descargar el archivo.

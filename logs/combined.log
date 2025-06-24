@@ -488,3 +488,141 @@
 [2025-06-20 22:45:11] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
 [2025-06-20 22:45:31] [32minfo[39m: [INFO] Intentando obtener imagen para breed_id=7 (Intento 1)
 [2025-06-20 22:45:32] [32minfo[39m: [INFO] Imagen obtenida exitosamente desde la API
+[2025-06-22 03:03:21] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:03:21] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:03:21] [32minfo[39m: 🌐 Servidor corriendo en el entorno production en el puerto 3001
+[2025-06-22 03:03:21] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:09:20] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:09:20] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:09:20] [32minfo[39m: 🌐 Servidor corriendo en el entorno production en el puerto 3001
+[2025-06-22 03:09:20] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:11:31] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:11:31] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:11:31] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:11:31] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:11:53] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:11:53] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:11:53] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:11:53] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:12:26] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:12:26] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:12:26] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:12:26] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:13:15] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:13:15] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:13:15] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:13:15] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:13:31] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:13:31] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:13:31] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:13:31] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:14:02] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:14:02] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:14:02] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:14:02] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:14:20] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:14:20] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:14:20] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:14:20] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:14:47] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:14:47] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:14:47] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:14:47] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:15:22] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:15:22] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:15:22] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:15:22] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:15:46] [31merror[39m: Error al descargar archivo: getaddrinfo ENOTFOUND account_name.blob.core.windows.net
+[2025-06-22 03:15:46] [31merror[39m: Error al descargarArchivo: No se pudo descargar el archivo.
+[2025-06-22 03:16:14] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:16:14] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:16:14] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:16:14] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:21:16] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:21:16] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:21:16] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:21:16] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:23:39] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:23:39] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:23:39] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:23:39] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:24:02] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:24:02] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:24:02] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:24:02] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:28:26] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:28:26] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:28:26] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:28:26] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-22 03:30:22] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-22 03:30:22] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-22 03:30:22] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-22 03:30:22] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:22:28] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:22:28] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:22:28] [32minfo[39m: 🌐 Servidor corriendo en el entorno production en el puerto 3001
+[2025-06-23 00:22:28] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:34:48] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:34:48] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:34:48] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:34:48] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:36:17] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:36:17] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:36:17] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:36:17] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:39:48] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:39:48] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:39:48] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:39:48] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:41:40] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:41:40] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:41:40] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:41:40] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:42:40] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:42:40] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:42:40] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:42:40] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:44:15] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:44:15] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:44:15] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:44:15] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:44:23] [32minfo[39m: GET /perros/razas
+[2025-06-23 00:45:25] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:45:25] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:45:25] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:45:25] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:45:29] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:45:29] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:45:29] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:45:29] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:45:45] [32minfo[39m: GET /perros/razas
+[2025-06-23 00:45:53] [32minfo[39m: GET /perros/imagen/28
+[2025-06-23 00:50:28] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:50:28] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:50:28] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:50:28] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:52:24] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:52:24] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:52:24] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:52:24] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:52:35] [32minfo[39m: POST /usuario/perros/favoritos - 1
+[2025-06-23 00:52:36] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:52:36] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:52:36] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:52:36] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:53:51] [32minfo[39m: GET /perros/favoritos
+[2025-06-23 00:54:12] [32minfo[39m: POST /usuario/perros/favoritos - 2
+[2025-06-23 00:54:13] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:54:13] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:54:13] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:54:13] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:54:16] [32minfo[39m: GET /perros/favoritos
+[2025-06-23 00:54:28] [32minfo[39m: DELETE /usuario/perros/favoritos/1
+[2025-06-23 00:54:29] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-23 00:54:29] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-23 00:54:29] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-23 00:54:29] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-23 00:54:35] [32minfo[39m: GET /perros/favoritos
+[2025-06-23 00:54:36] [32minfo[39m: GET /perros/favoritos
+[2025-06-23 00:54:36] [32minfo[39m: GET /perros/favoritos
+[2025-06-23 00:54:47] [32minfo[39m: POST /usuario/perros/favoritos - 1

@@ -8,7 +8,7 @@ const blobServiceClient = BlobServiceClient.fromConnectionString(process.env.AZU
  * Sube un archivo al contenedor de Azure Blob Storage.
  * 
  * @async
- * @function subirArchivo
+ * @function subiArchivo
  * @param {string} containerName - Nombre del contenedor.
  * @param {string} blobName - Nombre del archivo en el contenedor.
  * @param {Buffer} content - Contenido del archivo.
