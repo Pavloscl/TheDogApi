@@ -49,7 +49,9 @@ const logger = winston.createLogger({
     new winston.transports.Console(), // Salida de logs a la consola
     // Descomentar para habilitar logging en archivo
     new winston.transports.File({ filename: path.join(__dirname, '../../logs/error.log'), level: 'error' }),
-    new winston.transports.File({ filename: path.join(__dirname, '../../logs/combined.log') })
+    new winston.transports.File({ filename: path.join(__dirname, '../../logs/combined.log') }),
+    // Nuevo archivo específico para Dog logs 
+    //new winston.transports.File({ filename: path.join(__dirname, '../../logs/perros.log'), level: 'info' }),
   ],
 });
 

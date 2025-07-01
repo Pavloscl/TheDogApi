@@ -118,6 +118,7 @@
 
 const perrosService = require('../../domain/services/dog/dogService');
 const logger = require('../../infrastructure/logger');
+const dogLogger = require('../../infrastructure/dogLogger');
 const fs = require('fs');
 const path = require('path');
 
@@ -171,9 +172,11 @@ exports.listarRazas = async (req, res) => {
   try {
     const razas = await perrosService.getBreeds();
     logger.info('GET /perros/razas');
+    dogLogger.info('Se listaron los perros favoritos --> GET /perros/razas ');
     res.json(razas);
   } catch (error) {
     logger.error('Error listarRazas:', error);
+    dogLogger.info(' Error -> GET /perros/razas ');
     res.status(500).json({ message: 'Error interno' });
   }
 };
@@ -229,9 +232,11 @@ exports.obtenerImagenRaza = async (req, res) => {
     const imagen = await perrosService.getImageByBreed(id);
     if (!imagen) return res.status(404).json({ message: 'Imagen no encontrada' });
     logger.info(`GET /perros/imagen/${id}`);
+    dogLogger.info(` Se ha realizado la búsqueda de  la imagen por raza id ${id}  --> GET /perros/imagen/${id}`)
     res.json(imagen);
   } catch (error) {
     logger.error('Error obtenerImagenRaza:', error);
+       logger.info(` Error -> GET /perros/imagen/${id}`);
     res.status(500).json({ message: 'Error interno' });
   }
 };
@@ -281,6 +286,7 @@ exports.agregarFavorito = (req, res) => {
   favoritos.push({ id, name, addedAt: new Date().toISOString() });
   fs.writeFileSync(FAVORITOS_FILE, JSON.stringify(favoritos, null, 2));
   logger.info(`POST /usuario/perros/favoritos - ${id || name}`);
+  dogLogger.info(`Se Agrego a la lista de  favoritos ${id || name} --> POST /usuario/perros/favoritos - ${id || name}`);
   res.status(201).json({ message: 'Agregado a favoritos' });
 };
 
@@ -317,6 +323,7 @@ exports.agregarFavorito = (req, res) => {
 exports.listarFavoritos = (req, res) => {
   const favoritos = JSON.parse(fs.readFileSync(FAVORITOS_FILE));
   logger.info('GET /perros/favoritos');
+  dogLogger.info(`Se Listaros los perros Favoritos --> GET /perros/favoritos`);
   res.json(favoritos);
 };
 
@@ -361,6 +368,7 @@ exports.eliminarFavorito = (req, res) => {
   fs.mkdirSync(path.dirname(DELETE_LOG_FILE), { recursive: true });
   fs.writeFileSync(DELETE_LOG_FILE, JSON.stringify(deleteLog, null, 2));
   logger.info(`DELETE /usuario/perros/favoritos/${id}`);
+  dogLogger.info(` Se elimino de la lista de favoritos el id ${id} --> DELETE /usuario/perros/favoritos/${id}`);
   res.json({ message: 'Eliminado correctamente' });
 };
 
@@ -386,5 +394,6 @@ exports.top3Favoritas = (req, res) => {
   // contar ocurrencias (aquí asumimos que cada favorito se agrega una vez)
   const top3 = favoritos.slice(-3); // ejemplo simple: últimos 3
   logger.info('GET /perros/top3');
+  dogLogger.info(`Se ha obtenido los top 3 Favoritos ${top3} --> GET /perros/top3`);
   res.json(top3);
 };
