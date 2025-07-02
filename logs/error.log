@@ -7,3 +7,6 @@
 [2025-06-20 14:54:24] [31merror[39m: Error al obtener feriados legales: Error al obtener feriados legales: Failed to connect to localhost:1433 - Could not connect (sequence)
 [2025-06-22 03:15:46] [31merror[39m: Error al descargar archivo: getaddrinfo ENOTFOUND account_name.blob.core.windows.net
 [2025-06-22 03:15:46] [31merror[39m: Error al descargarArchivo: No se pudo descargar el archivo.
+[2025-07-01 22:04:55] [31merror[39m: Error obtenerImagenRaza: b is not defined
+[2025-07-01 22:20:04] [31merror[39m: Error obtenerImagenRaza: Request failed with status code 400
+[2025-07-01 22:31:09] [31merror[39m: Error obtenerInfoCompleta: Request failed with status code 400

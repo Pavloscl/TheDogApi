@@ -56,3 +56,49 @@ exports.getImageByBreed = async (breedId) => {
   cache.set(cacheKey, result);
   return result;
 };
+
+
+exports.getFullBreedInfoById = async (breedId) => {
+  const cacheKey = `breed_${breedId}`;
+  
+  if (cache.has(cacheKey)) {
+    const cached = cache.get(cacheKey);
+    return {
+      ...cached,
+      image_url: cached.image_url || null
+    };
+  }
+
+  try {
+    const resp = await axios.get(`${API_BASE}/breeds/${breedId}`);
+    const data = resp.data;
+
+    if (!data || !data.id || !data.name) {
+      console.warn(`Raza con ID ${breedId} no encontrada `);
+      return null;
+    }
+
+    const breedInfo = {
+      idBreed: data.id,
+      name: data.name,
+      origin: data.origin || null,
+      temperament: data.temperament || null,
+      breed_group: data.breed_group || null
+    };
+
+    let image_url = data.image?.url || null;
+
+    if (!image_url) {
+      const imageResult = await exports.getImageByBreed(breedId);
+      image_url = imageResult?.image_url || null;
+    }
+    const fullInfo = { ...breedInfo, image_url };
+
+    cache.set(cacheKey, fullInfo);
+    return fullInfo;
+
+  } catch (error) {
+    console.error(`Error al obtener información de la raza ${breedId}:`, error.message);
+    return null;
+  }
+};

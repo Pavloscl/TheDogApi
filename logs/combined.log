@@ -714,3 +714,129 @@
 [2025-06-30 21:54:30] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
 [2025-06-30 21:54:30] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
 [2025-06-30 21:54:45] [32minfo[39m: GET /perros/imagen/4
+[2025-06-30 22:07:39] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-30 22:07:39] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-30 22:07:39] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-30 22:07:39] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-30 22:13:10] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-30 22:13:10] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-30 22:13:10] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-30 22:13:10] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-30 22:14:14] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-30 22:14:14] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-30 22:14:14] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-30 22:14:14] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-30 22:14:25] [32minfo[39m: GET /perros/imagen/4
+[2025-06-30 22:19:41] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-30 22:19:41] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-30 22:19:41] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-30 22:19:41] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-30 22:19:57] [32minfo[39m: GET /perros/imagen/4
+[2025-06-30 22:23:07] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-30 22:23:07] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-30 22:23:07] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-30 22:23:07] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-30 22:23:10] [32minfo[39m: GET /perros/imagen/4
+[2025-06-30 22:28:18] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-30 22:28:18] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-30 22:28:18] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-30 22:28:18] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-30 22:28:26] [32minfo[39m: GET /perros/imagen/4
+[2025-06-30 22:29:33] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-30 22:29:33] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-30 22:29:33] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-30 22:29:33] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-30 22:29:45] [32minfo[39m: GET /perros/imagen/4
+[2025-06-30 22:30:23] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-30 22:30:23] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-30 22:30:23] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-30 22:30:23] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-30 22:30:29] [32minfo[39m: GET /perros/imagen/4
+[2025-06-30 22:37:10] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-30 22:37:10] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-30 22:37:10] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-30 22:37:10] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-30 22:38:27] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-30 22:38:27] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-30 22:38:27] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-30 22:38:27] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-06-30 22:39:27] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-06-30 22:39:27] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-06-30 22:39:27] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-06-30 22:39:27] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 21:38:30] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 21:38:30] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 21:38:30] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 21:38:30] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 21:57:17] [32minfo[39m: GET /perros/imagen/4
+[2025-07-01 22:00:56] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:00:56] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:00:56] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:00:56] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:01:06] [32minfo[39m: GET /perros/imagen/9
+[2025-07-01 22:01:23] [32minfo[39m: GET /perros/imagen/1
+[2025-07-01 22:02:44] [32minfo[39m: GET /perros/imagen/1
+[2025-07-01 22:03:42] [32minfo[39m: GET /perros/razas
+[2025-07-01 22:04:51] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:04:51] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:04:51] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:04:51] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:04:55] [31merror[39m: Error obtenerImagenRaza: b is not defined
+[2025-07-01 22:04:55] [32minfo[39m:  Error -> GET /perros/imagen/1
+[2025-07-01 22:07:00] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:07:00] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:07:00] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:07:00] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:07:09] [32minfo[39m: GET /perros/imagen/1
+[2025-07-01 22:10:16] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:10:16] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:10:16] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:10:16] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:10:22] [32minfo[39m: GET /perros/imagen/1
+[2025-07-01 22:19:18] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:19:18] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:19:18] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:19:18] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:19:23] [32minfo[39m: GET /perros/imagen/1
+[2025-07-01 22:20:04] [31merror[39m: Error obtenerImagenRaza: Request failed with status code 400
+[2025-07-01 22:20:04] [32minfo[39m:  Error -> GET /perros/imagen/89098
+[2025-07-01 22:20:21] [32minfo[39m: GET /perros/imagen/1
+[2025-07-01 22:20:27] [32minfo[39m: GET /perros/imagen/1
+[2025-07-01 22:22:30] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:22:30] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:22:30] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:22:30] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:22:41] [32minfo[39m: GET /perros/imagen/5
+[2025-07-01 22:23:19] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:23:19] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:23:19] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:23:19] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:24:09] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:24:09] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:24:09] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:24:09] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:25:17] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:25:17] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:25:17] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:25:17] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:25:47] [32minfo[39m: GET /perros/imagen/6
+[2025-07-01 22:26:20] [32minfo[39m: GET /perros/imagen/1
+[2025-07-01 22:30:45] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:30:45] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:30:45] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:30:45] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:31:09] [31merror[39m: Error obtenerInfoCompleta: Request failed with status code 400
+[2025-07-01 22:31:09] [32minfo[39m:  Error -> GET /perros/informacionRaza/879876565789
+[2025-07-01 22:35:21] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:35:21] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:35:21] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:35:21] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:37:19] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:37:19] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:37:19] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:37:19] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:38:00] [32minfo[39m: 📚 Swagger UI configurado en /api-docs
+[2025-07-01 22:38:00] [32minfo[39m: 🌐 Rutas de la API configuradas en /api
+[2025-07-01 22:38:00] [32minfo[39m: 🌐 Servidor corriendo en el entorno development en el puerto 3001
+[2025-07-01 22:38:00] [32minfo[39m: 📚 Documentación de API disponible en http://localhost:3001/api-docs
+[2025-07-01 22:38:18] [32minfo[39m: GET /perros/informacionRaza/84

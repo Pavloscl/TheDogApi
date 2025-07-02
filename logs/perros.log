@@ -1,1 +1,21 @@
 [2025-06-30 21:54:45] info:  Se ha realizado la búsqueda de  la imagen por raza id 4  --> GET /perros/imagen/4
+[2025-06-30 22:14:25] info:  Se ha realizado la búsqueda de  la imagen por raza id 4  --> GET /perros/imagen/4
+[2025-06-30 22:19:57] info:  Se ha realizado la búsqueda de  la imagen por raza id 4  --> GET /perros/imagen/4
+[2025-06-30 22:23:10] info:  Se ha realizado la búsqueda de  la imagen por raza id 4  --> GET /perros/imagen/4
+[2025-06-30 22:28:26] info:  Se ha realizado la búsqueda de  la imagen por raza id 4  --> GET /perros/imagen/4
+[2025-06-30 22:29:45] info:  Se ha realizado la búsqueda de  la imagen por raza id 4  --> GET /perros/imagen/4
+[2025-06-30 22:30:29] info:  Se ha realizado la búsqueda de  la imagen por raza id 4  --> GET /perros/imagen/4
+[2025-07-01 21:57:17] info:  Se ha realizado la búsqueda de  la imagen por raza id 4  --> GET /perros/imagen/4
+[2025-07-01 22:01:06] info:  Se ha realizado la búsqueda de  la imagen por raza id 9  --> GET /perros/imagen/9
+[2025-07-01 22:01:23] info:  Se ha realizado la búsqueda de  la imagen por raza id 1  --> GET /perros/imagen/1
+[2025-07-01 22:02:44] info:  Se ha realizado la búsqueda de  la imagen por raza id 1  --> GET /perros/imagen/1
+[2025-07-01 22:03:42] info: Se listaron los perros favoritos --> GET /perros/razas 
+[2025-07-01 22:07:09] info:  Se ha realizado la búsqueda de  la imagen por raza id 1  --> GET /perros/imagen/1
+[2025-07-01 22:10:22] info:  Se ha realizado la búsqueda de  la imagen por raza id 1  --> GET /perros/imagen/1
+[2025-07-01 22:19:23] info:  Se ha realizado la búsqueda de  la imagen por raza id 1  --> GET /perros/imagen/1
+[2025-07-01 22:20:21] info:  Se ha realizado la búsqueda de  la imagen por raza id 1  --> GET /perros/imagen/1
+[2025-07-01 22:20:27] info:  Se ha realizado la búsqueda de  la imagen por raza id 1  --> GET /perros/imagen/1
+[2025-07-01 22:22:41] info:  Se ha realizado la búsqueda de  la imagen por raza id 5  --> GET /perros/imagen/5
+[2025-07-01 22:25:47] info:  Se ha realizado la búsqueda de  la imagen por raza id 6  --> GET /perros/imagen/6
+[2025-07-01 22:26:20] info:  Se ha realizado la búsqueda de  la imagen por raza id 1  --> GET /perros/imagen/1
+[2025-07-01 22:38:18] info:  Se ha realizado la búsqueda de  la información completa  por raza id 84  --> GET /perros/imagen/84

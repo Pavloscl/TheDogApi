@@ -241,6 +241,27 @@ exports.obtenerImagenRaza = async (req, res) => {
   }
 };
 
+//método que obtiene la información completa de la raza más su imagen.
+exports.obtenerInformacionRazaPorId = async (req, res) => {
+  const id = parseInt(req.params.id, 10);
+  if (isNaN(id)) 
+    return res.status(400).json({ message: 'ID inválido' });
+  try {
+    const info = await perrosService.getFullBreedInfoById(id);
+    if (!info) return res.status(404).json({ message: 'Información no encontrada' });
+    logger.info(`GET /perros/informacionRaza/${id}`);
+    dogLogger.info(` Se ha realizado la búsqueda de  la información completa  por raza id ${id}  --> GET /perros/imagen/${id}`)
+    res.json(info);
+  } catch (error) {
+    logger.error('Error obtenerInfoCompleta:', error);
+       logger.info(` Error -> GET /perros/informacionRaza/${id}`);
+    res.status(500).json({ message: 'Error interno' });
+  }
+};
+
+
+
+
 /**
  * @swagger
  * /dog/favoritos:
@@ -397,3 +418,4 @@ exports.top3Favoritas = (req, res) => {
   dogLogger.info(`Se ha obtenido los top 3 Favoritos ${top3} --> GET /perros/top3`);
   res.json(top3);
 };
+

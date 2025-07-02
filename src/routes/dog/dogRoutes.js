@@ -1,13 +1,3 @@
-// const express = require('express');
-// const router = express.Router();
-// const dogController = require('../../controllers/dog/dogController');
-
-
-// router.get('/ObtenerListadoCanino', dogController.obtenerDatosCaninos);
-
-// router.get('/ObtenerImagenPorRaza/:id', dogController.obtenerImagenPorRaza);
-
-// module.exports = router;
 
 
 const express = require('express');
@@ -30,5 +20,7 @@ router.get('/dog/favoritos', perrosController.listarFavoritos);
 router.delete('/dog/favoritos/:id', perrosController.eliminarFavorito);
 
 router.get('/dog/topPerros3', perrosController.top3Favoritas);
+
+router.get('/dog/InformacionRaza/:id', perrosController.obtenerInformacionRazaPorId);
 
 module.exports = router;
